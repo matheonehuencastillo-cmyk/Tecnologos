@@ -3,12 +3,19 @@
   los integrantes de este trabajo practico son:
   
   1-Nombre y Apellido: Axel David Soto
-         comision: 3
+  
+    comision: 3
+    
   2-Nombre y Apeliido: (completa uno de los integrantes)
+  
   comision: 3
+  
   3-Nombre y Apellido: (completa otro de los integrantes)
+  
   comision: 3
+  
   4-Nombre y Apellido: (a confirmar si se agrega otro compañero)
+  
   comision: 3.
   
   El trabajo practico consiste en crear un sitio web de una institucion de una ONG ficticia, en este sitio se desarrollara o crear un        nombre, la misión y los programas de esta organización.

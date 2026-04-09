@@ -1,6 +1,7 @@
 # altote-y-enano
   Buenas a los que vengan a leer este Readme, este repositorio se va a encargar del trabajo grupal de la materia lenguaje informatico 1,
   los integrantes de este trabajo practico son:
+  
   1-Nombre y Apellido: Axel David Soto
   comision: 3
   2-Nombre y Apeliido: (completa uno de los integrantes)

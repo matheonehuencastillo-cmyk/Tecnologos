@@ -19,15 +19,23 @@
   comision: 3.
   
   El trabajo practico consiste en crear un sitio web de una institucion de una ONG ficticia, en este sitio se desarrollara o crear un        nombre, la misión y los programas de esta organización.
+  
   datos de la ONG:
+  
   Nombre: A confirmar
+  
   misión: A confirmar
+  
   programas: A confirmar.
 
   Pagina del sitio:
+  
   *index.htmal: integrante a cargo a confirmar.caracteristicas: pagina de inicio donde se va presentar a la ONG, su misión y un resumen       visual de sus programas o area de trabajos
+  
   *nosotros.html: integrante a cargo a confirmar.caracteristicas: esto se va a encargar de contar la historia de la organización, sus         valores y equipo.
+  
   *programas.html: integrante a cargo a confirmar.caracteristicas: esto se va encargar de dar información sobre de los programas de la ONG    y para quien va dirigido.
+  
   *contacto.html: integrante a cargo a confirmar.caracteristicas: esto va a dar todo lo que tenga que ver con los contactos de la ONG.
 
   Este sitio ira creciendo conforme al avance de la materia, en la primera parte es:

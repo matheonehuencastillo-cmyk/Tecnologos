@@ -3,7 +3,7 @@
   los integrantes de este trabajo practico son:
   
   1-Nombre y Apellido: Axel David Soto
-  comision: 3
+         comision: 3
   2-Nombre y Apeliido: (completa uno de los integrantes)
   comision: 3
   3-Nombre y Apellido: (completa otro de los integrantes)

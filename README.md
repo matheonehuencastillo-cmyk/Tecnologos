@@ -6,7 +6,7 @@
   
     comision: 3
     
-  2-Nombre y Apeliido: (completa uno de los integrantes)
+  2-Nombre y Apeliido: Matheo Nehuen Castillo
   
   comision: 3
   

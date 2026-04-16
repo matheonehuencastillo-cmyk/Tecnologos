@@ -1,4 +1,4 @@
-# altote-y-enano
+# Tecnologos
   Buenas a los que vengan a leer este Readme, este repositorio se va a encargar del trabajo grupal de la materia lenguaje informatico 1,
   los integrantes de este trabajo practico son:
   

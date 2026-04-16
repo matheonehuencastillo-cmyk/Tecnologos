@@ -10,7 +10,7 @@
   
   comision: 3
   
-  3-Nombre y Apellido: (completa otro de los integrantes)
+  3-Nombre y Apellido: Francisco Valentin Schwab
   
   comision: 3
   

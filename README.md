@@ -22,7 +22,7 @@
   
   datos de la ONG:
   
-  Nombre: A confirmar
+  Nombre: Organización Nacional De Tecnología
   
   misión: A confirmar
   
@@ -30,7 +30,7 @@
 
   Pagina del sitio:
   
-  *index.html: integrante a cargo a confirmar.caracteristicas: pagina de inicio donde se va presentar a la ONG, su misión y un resumen  visual de sus programas o area de trabajos
+  *index.html: <strong> Axel David Soto</strong> .caracteristicas: pagina de inicio donde se va presentar a la ONG, su misión y un resumen  visual de sus programas o area de trabajos
   
   *nosotros.html: integrante a cargo a confirmar.caracteristicas: esto se va a encargar de contar la historia de la organización, sus  valores y equipo.
   

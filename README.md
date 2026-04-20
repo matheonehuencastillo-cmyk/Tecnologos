@@ -14,7 +14,7 @@
   
   comision: 3
   
-  4-Nombre y Apellido: (a confirmar si se agrega otro compañero)
+  4-Nombre y Apellido: Tobias Almiron
   
   comision: 3.
   

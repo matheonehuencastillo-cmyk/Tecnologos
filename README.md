@@ -28,7 +28,9 @@
   programas: 
   
   1-<strong>Conectando Futuro</strong>
+  
   2-<strong>Capacitación Digital</strong>
+  
   3-<strong>Puentes Tecnológicos</strong>
 
   Etapa 1: Estructura HTML

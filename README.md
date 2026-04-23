@@ -1,4 +1,4 @@
-# Tecnologos
+# TECNO-ACCIÓN :Organización Nacional de Tecnología
   Buenas a los que vengan a leer este Readme, este repositorio se va a encargar del trabajo grupal de la materia lenguaje informatico 1,
   los integrantes de este trabajo practico son:
   
@@ -22,11 +22,14 @@
   
   datos de la ONG:
   
-  Nombre: Organización Nacional De Tecnología
-  
+  Nombre:TECNO-ACCIÓN:Organización Nacional De Tecnología  
   misión: A confirmar
   
-  programas: A confirmar.
+  programas: 
+  
+  1-<strong>Conectando Futuro</strong>
+  2-<strong>Capacitación Digital</strong>
+  3-<strong>Puentes Tecnológicos</strong>
 
   Etapa 1: Estructura HTML
 
@@ -40,10 +43,10 @@
   
   *contacto.html: <strong>Tobias Almiron</strong>. caracteristicas: esto va a dar todo lo que tenga que ver con los contactos de la ONG.
 
-  Este sitio ira creciendo conforme al avance de la materia, en la primera parte es:
+  <em>Este sitio ira creciendo conforme al avance de la materia, en la primera parte es:
   1. en el primer commit obligatorio que es en la clase 4 se haran un index.html + las paginas secundarias con HTML  semántico completo. (Estructura HTML).
   2. en el segundo commit obligatorio empiza la etapa de estilos CSS en la clase 6 y aca se implementara hojas de estilos vinculadas, Layaout, colores y tipografía aplicados.
   3. en el tercer commit obligatorio empieza la etapa framework CSS es en la clase 10 se implementara Grilla y componentes de bootstrap integrados.
-  4. ultimo coomit obligatorio etapa de javaScript es implementar al menos una una interacción dinamica funcionando en el sitio.
+  4. ultimo coomit obligatorio etapa de javaScript es implementar al menos una una interacción dinamica funcionando en el sitio.</em>
 
   Etapa 2 : por ahora sin definir

@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECNO-ACCIÓN:Organizacion Nacional de Tecnología</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>TECNO-ACCIÓN | Organización Nacional de Tecnología</title>
 </head>
+
 <body>
+
     <header>
+        <h1>TECNO-ACCIÓN</h1>
 
-        <h1>Bienvenido a la página de TECNO-ACCIÓN: Organización Nacional de Tecnología</h1>
+        <p>Organización Nacional de Tecnología</p>
 
-        <nav>
+        <nav aria-label="Menú principal">
             <ul>
                 <li><a href="index.html">Página Principal</a></li>
                 <li><a href="nosotros.html">Información</a></li>
@@ -18,19 +25,30 @@
             </ul>
         </nav>
     </header>
-<main>
-    <h2>Programas</h2>
 
-    <p>
-        En TECNO-ACCIÓN desarrollamos distintos programas para reducir la brecha digital y brindar oportunidades a quienes más lo necesitan.
-    </p>
+    <main>
 
-    <ul>
-        <li>
+        <section>
+            <h2>Programas</h2>
+
+            <p>
+                En TECNO-ACCIÓN desarrollamos distintos programas para reducir la brecha digital y brindar oportunidades a quienes más lo necesitan.
+            </p>
+
             <article>
                 <h3>💻 Conectando Futuro</h3>
 
-                <img src="imagenes/programas/conectando.jpg" alt="Entrega de computadoras a estudiantes" width="300">
+                <figure>
+                    <img 
+                        src="imagenes/programas/conectando.jpg"
+                        alt="Entrega de computadoras a estudiantes"
+                        width="300"
+                    >
+
+                    <figcaption>
+                        Entrega de computadoras a estudiantes.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Este programa se encarga de la recolección, reparación y entrega de computadoras a personas que no tienen acceso a tecnología.
@@ -41,13 +59,21 @@
                     Podés participar donando equipos en desuso o sumándote como voluntario para ayudar en la reparación y distribución.
                 </p>
             </article>
-        </li>
 
-        <li>
             <article>
                 <h3>📚 Capacitación Digital</h3>
 
-                <img src="imagenes/programas/capacitacion.jpg" alt="Personas aprendiendo computación" width="300">
+                <figure>
+                    <img 
+                        src="imagenes/programas/capacitacion.jpg"
+                        alt="Personas aprendiendo computación"
+                        width="300"
+                    >
+
+                    <figcaption>
+                        Curso de capacitación digital.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Ofrecemos cursos gratuitos para enseñar el uso básico de computadoras y herramientas digitales.
@@ -58,13 +84,21 @@
                     Podés participar como alumno para formarte o como docente voluntario si ya tenés conocimientos.
                 </p>
             </article>
-        </li>
 
-        <li>
             <article>
                 <h3>🌐 Puentes Tecnológicos</h3>
 
-                <img src="imagenes/programas/puentes.jpg" alt="Personas trabajando con tecnología" width="300">
+                <figure>
+                    <img 
+                        src="imagenes/programas/puentes.jpg"
+                        alt="Personas trabajando con tecnología"
+                        width="300"
+                    >
+
+                    <figcaption>
+                        Participantes utilizando herramientas digitales.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Este programa brinda apoyo para acceder a oportunidades laborales o educativas mediante el uso de herramientas digitales.
@@ -75,9 +109,37 @@
                     Podés participar asistiendo a talleres, capacitaciones o formando parte como mentor para acompañar a otros.
                 </p>
             </article>
-        </li>
-    </ul>
-</main>
+        </section>
+
+        <aside>
+            <h2>Dato importante</h2>
+
+            <p>
+                Más de 500 personas participaron de nuestros programas durante el último año.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <address>
+            <p>TECNO-ACCIÓN — Organización Nacional de Tecnología</p>
+
+            <p>
+                Email:
+                <a href="mailto:contacto@tecnoaccion.org">
+                    contacto@tecnoaccion.org
+                </a>
+            </p>
+
+            <p>
+                Teléfono:
+                <a href="tel:+541112345678">
+                    +54 11 1234-5678
+                </a>
+            </p>
+        </address>
+    </footer>
 
 </body>
 </html>

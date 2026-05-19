@@ -1,14 +1,8 @@
-/* ==========================================================================
-LENGUAJES INFORMÁTICOS 1 (UNAHUR) - TRABAJO PRÁCTICO GRUPAL
-INTEGRANTE 4: Componentes de Datos, Interactivos y Visuales
-   ========================================================================== */
+/* =========================
+   COLORES DE LA ONG
+========================= */
 
 :root {
-    --color-institucional: #0052cc;  
-    --color-texto-oscuro: #1e293b;  
-    --color-gris-borde: #b0c1d6;    
-    --color-fondo-cebra: #f1f5f9;   
-    --padding-celda: 12px;    
     --azul-oscuro: #0B2545;
     --azul: #134074;
     --celeste: #8DA9C4;
@@ -16,7 +10,6 @@ INTEGRANTE 4: Componentes de Datos, Interactivos y Visuales
     --blanco: #FFFFFF;
     --fondo: black;
 }
-
 
 /* =========================
    RESET
@@ -543,4 +536,3 @@ button[type="submit"]:hover,
 input[type="submit"]:hover {
     filter: brightness(0.9);        
 }
-

@@ -272,7 +272,7 @@ personalizar Bootstrap.
 navbar-brand.
 <br>
 
-2-integrante 2 : <strong>a confirmar</strong> se encarga de la Grilla de Bootstrap en al menos una sección: container, row, col-*
+2-integrante 2 : <strong>Matheo Nehuen Castillo </strong> se encarga de la Grilla de Bootstrap en al menos una sección: container, row, col-*
 responsivos.
 <br>
 

@@ -205,6 +205,18 @@ main {
 }
 
 /* =========================
+    TITULO PRINCIPAL
+========================= */
+
+h1 {
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+
+/* =========================
     TITULO PROGRAMAS
 ========================= */
 

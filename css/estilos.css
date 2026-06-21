@@ -38,12 +38,16 @@ body {
     font-family: var(--fuente);
     background-color: var(--gris-claro);
     color: var(--azul-oscuro);
+    font-size: 19px;
 
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 
     line-height: 1.6;
+}
+h2{
+    font-size: 40px;
 }
 
 /* =========================
@@ -59,6 +63,7 @@ header{
 ========================= */
 
 nav ul {
+    font-size: large;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -161,9 +166,7 @@ nav li.desplegable .submenu a {
 nav li.desplegable .submenu a::before {
     border-radius: 0;
 }
-.titulo{
-    position: static;
-}
+
 /* =========================
     FOOTER
 ========================= */

@@ -8,9 +8,468 @@ INTEGRANTE 4: Componentes de Datos, Interactivos y Visuales
     --color-texto-oscuro: #1e293b;  
     --color-gris-borde: #b0c1d6;    
     --color-fondo-cebra: #f1f5f9;   
-    --padding-celda: 12px;          
+    --padding-celda: 12px;    
+    --azul-oscuro: #0B2545;
+    --azul: #134074;
+    --celeste: #8DA9C4;
+    --gris-claro: #EEF4ED;
+    --blanco: #FFFFFF;
+    --fondo: black;
+    --fuente : 'inter' , sans-serif;
 }
 
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* =========================
+    BODY
+========================= */
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--gris-claro);
+    color: var(--azul-oscuro);
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+    line-height: 1.6;
+}
+
+/* =========================
+    HEADER
+========================= */
+
+header{
+    position: sticky;
+    top: 0 ;
+}
+/* =========================
+    Nav
+========================= */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    z-index: 0;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blanco);
+    border-radius: 6px;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+nav a:hover::before {
+    left: 0;
+}
+
+nav a:hover {
+    color: var(--azul-oscuro);
+}
+
+/* =========================
+    NAV - DESPLEGABLE
+========================= */
+
+nav li.desplegable {
+    position: relative;
+}
+
+nav li.desplegable > span {
+    display: inline-block;
+    color: var(--blanco);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav li.desplegable:hover > span {
+    background-color: var(--blanco);
+    color: var(--azul-oscuro);
+}
+
+nav li.desplegable .submenu {
+    display: none;
+    position: static;
+    background-color: var(--azul);
+    border-radius: 0 0 8px 8px;
+    padding: 5px 0;
+    min-width: 200px;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 5px;
+}
+
+nav li.desplegable:hover .submenu {
+    display: flex;
+}
+
+nav li.desplegable .submenu li {
+    width: 100%;
+}
+
+nav li.desplegable .submenu a {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+}
+
+nav li.desplegable .submenu a::before {
+    border-radius: 0;
+}
+.titulo{
+    position: static;
+}
+/* =========================
+    FOOTER
+========================= */
+footer{
+    background-color: var(--fondo);
+    color: var(--blanco);
+
+    margin-top: 30px;
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+footer a {
+    color: var(--celeste);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--blanco);
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+    MAIN
+========================= */
+
+main {
+    font-family: var(--fuente);
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding: 1rem;
+}
+.logo{
+    top: -100%;
+    width: 1500px;
+    height: 500px;
+}
+
+/* =========================
+    TITULO PRINCIPAL
+========================= */
+
+h1 {
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+
+/* =========================
+    TITULO PROGRAMAS
+========================= */
+
+.programas h2 {
+    text-align: center;
+    color: var(--azul);
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+}
+
+.programas > p {
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: var(--azul-oscuro);
+}
+
+/* =========================
+    CONTENEDOR FLEX
+========================= */
+
+.contenedor-programas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* =========================
+    TARJETAS
+========================= */
+
+.card-programa {
+    flex: 1 1 300px;
+
+    background-color: var(--blanco);
+
+    border: 3px solid var(--azul);
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s;
+    position: static;
+}
+
+.card-programa:hover {
+    transform: scale(1.02);
+
+}
+
+/* =========================
+   TITULOS TARJETAS
+========================= */
+
+.card-programa h3 {
+    text-align: center;
+
+    color: var(--azul);
+
+    margin-bottom: 15px;
+
+
+}
+
+/* =========================
+   IMAGENES
+========================= */
+
+.card-programa figure {
+    text-align: center;
+}
+
+.card-programa img {
+    width: 100%;
+    max-width: 300px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+
+}
+
+/* =========================
+    FIGCAPTION
+========================= */
+
+.card-programa figcaption {
+    color: gray;
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+    PARRAFOS
+========================= */
+
+.card-programa p {
+    text-align: justify;
+
+    color: var(--azul-oscuro);
+
+    margin-top: 10px;
+}
+
+/* =========================
+    ASIDE
+========================= */
+
+aside {
+    background-color: var(--celeste);
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border-left: 8px solid var(--azul);
+    border-radius: 10px;
+}
+
+aside h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 10px;
+}
+
+aside p {
+    color: var(--azul-oscuro);
+}
+
+/* =========================
+    NOSOTROS - SECCIÓN INTRO
+========================= */
+
+.nosotros-intro {
+    background-color: var(--blanco);
+    border-left: 6px solid var(--azul);
+    border-radius: 12px;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nosotros-intro h2 {
+    color: var(--azul);
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+/* =========================
+    NOSOTROS - DETAILS
+========================= */
+
+details {
+    background-color: var(--blanco);
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.3s;
+}
+
+.titulo-details{
+    display: inline;
+}
+
+
+details:hover {
+    border-color: var(--azul);
+}
+
+details summary {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 15px 20px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+details summary::before {
+    content: "▶";
+    font-size: 0.75rem;
+    color: var(--celeste);
+    transition: transform 0.3s;
+}
+
+details[open] summary {
+    border-radius: 8px 8px 0 0;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details summary h3 {
+    font-size: 1.1rem;
+    color: var(--blanco);
+    margin: 0;
+}
+
+details p {
+    padding: 15px 20px;
+    color: var(--azul-oscuro);
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+details b {
+    color: var(--azul);
+}
+
+/* =========================
+    NOSOTROS - SEPARADOR HR
+========================= */
+
+hr {
+    border: none;
+    border-top: 2px solid var(--celeste);
+    opacity: 0.4;
+    margin: 10px 0;
+}
+
+/* =========================
+    NOSOTROS - VOLVER ARRIBA
+========================= */
+
+.volver-arriba {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 10px auto;
+    padding: 12px 28px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.volver-arriba:hover {
+    background-color: var(--azul-oscuro);
+    transform: translateY(-3px);
+}
 /* ==========================================================================
 SECCIÓN: ESTILOS PARA IMÁGENES
    ========================================================================== */
@@ -26,6 +485,11 @@ img {
 
 aside img {
     margin-left: 0;                 
+}
+
+section{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ==========================================================================
@@ -64,11 +528,13 @@ SECCIÓN: ESTILOS PARA FORMULARIOS
    ========================================================================== */
 form {
     margin: 2rem 0;
+    
 }
 
 label {
     display: block;                 
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
+    height: auto;
     font-weight: bold;
     color: var(--color-texto-oscuro);
 }
@@ -77,7 +543,8 @@ input[type="text"],
 input[type="email"],
 textarea,
 select {
-    width: 25%;                    
+    width: 100%;
+    max-width: 500px;                    
     padding: var(--padding-celda);  
     border: 1px solid var(--color-gris-borde); 
     border-radius: 4px;
@@ -95,7 +562,7 @@ select:focus{
 }
 
 textarea {
-    min-height: 120px;
+    min-height: 60px;
     resize: vertical;               
 }
 
@@ -177,5 +644,11 @@ INTEGRANTE 4: Posicionamiento y personalización Bootstrap (Etapa 3)
     background-color: var(--azul);
     border-color: var(--azul);
 }
+
+
+/* ==========================================================================
+ 
+   ========================================================================== */
+
 
 

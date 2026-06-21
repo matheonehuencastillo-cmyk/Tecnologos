@@ -114,4 +114,68 @@ button[type="submit"]:hover,
 input[type="submit"]:hover {
     filter: brightness(0.9);        
 }
+/* ==========================================================================
+INTEGRANTE 4: Posicionamiento y personalización Bootstrap (Etapa 3)
+   ========================================================================== */
+
+/* ---- Posicionamiento adicional ---- */
+
+.imagen-wrapper {
+    position: relative;
+}
+
+.imagen-wrapper .badge-custom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* ---- Bootstrap - personalizaciones ---- */
+
+.card {
+    border: 2px solid var(--azul);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-title {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.card .btn-primary {
+    background-color: var(--azul);
+    border-color: var(--azul);
+    transition: background-color 0.3s;
+}
+
+.card .btn-primary:hover {
+    background-color: var(--azul-oscuro);
+    border-color: var(--azul-oscuro);
+}
+
+.badge-custom {
+    background-color: var(--celeste);
+    color: var(--azul-oscuro);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.4em 0.8em;
+}
+
+.btn-outline-primary {
+    color: var(--azul);
+    border-color: var(--azul);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
 

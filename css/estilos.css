@@ -591,13 +591,18 @@ INTEGRANTE 4: Posicionamiento y personalización Bootstrap (Etapa 3)
 /* ---- Posicionamiento adicional ---- */
 
 .imagen-wrapper {
-    position: relative;
+    position: static;
 }
 
 .imagen-wrapper .badge-custom {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    display: block;
+    opacity: 0.7;
+    visibility: visible;
+    background-color: black;
+    gap: 10px;
+    top: 1900px;
+    right: 145px;
     z-index: 2;
 }
 

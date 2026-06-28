@@ -75,7 +75,7 @@ nav ul {
 nav a {
     display: inline-block;
     text-decoration: none;
-    color: var(--blanco);
+    color: white;
     padding: 8px 18px;
     border-radius: 6px;
     font-family: 'Segoe UI', sans-serif;
@@ -230,6 +230,7 @@ h1 {
     text-align: center;
     color: var(--azul);
     margin-bottom: 15px;
+    padding: 20px;
 
     font-size: 2rem;
 }
@@ -667,4 +668,7 @@ INTEGRANTE 4: Posicionamiento y personalización Bootstrap (Etapa 3)
    ========================================================================== */
 
 
-
+section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}

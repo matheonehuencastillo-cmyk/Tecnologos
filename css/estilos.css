@@ -205,9 +205,10 @@ main {
     padding: 1rem;
 }
 .logo{
-    top: -100%;
-    width: 1500px;
-    height: 500px;
+    width: 1400px;
+    height: 450px;
+    margin: 5px;
+    padding: 50px;
 }
 
 /* =========================

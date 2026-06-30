@@ -1,12 +1,11 @@
 // ==========================================================================
 // LENGUAJES INFORMÁTICOS 1 (UNAHUR) - TRABAJO PRÁCTICO GRUPAL
 // Etapa 4 - JavaScript
-// Funcionalidades:
-//   1. Modo oscuro (todas las páginas)
-//   2. Buscador de programas (sección "Programas")
+// Funcionalidad: Buscador de programas (sección "Programas")
 // ==========================================================================
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
 
     // ----------------------------------------------------------------
     // 1. MODO OSCURO
@@ -29,10 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("modo", activado ? "oscuro" : "claro");
         });
     }
+document.addEventListener("DOMContentLoaded", () => {
 
-    // ----------------------------------------------------------------
-    // 2. BUSCADOR DE PROGRAMAS
-    // ----------------------------------------------------------------
     const buscador = document.getElementById("buscador-programas");
 
     // Si la página actual no tiene el buscador (no es programas.html), no hace nada
@@ -63,4 +60,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-

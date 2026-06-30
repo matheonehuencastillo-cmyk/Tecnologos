@@ -1,0 +1,38 @@
+// ==========================================================================
+// LENGUAJES INFORMÁTICOS 1 (UNAHUR) - TRABAJO PRÁCTICO GRUPAL
+// Etapa 4 - JavaScript
+// Funcionalidad: Buscador de programas (sección "Programas")
+// ==========================================================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buscador = document.getElementById("buscador-programas");
+
+    // Si la página actual no tiene el buscador (no es programas.html), no hace nada
+    if (!buscador) return;
+
+    const items = document.querySelectorAll(".programa-item");
+    const sinResultados = document.getElementById("sin-resultados");
+
+    buscador.addEventListener("input", () => {
+        const texto = buscador.value.trim().toLowerCase();
+        let hayResultados = false;
+
+        items.forEach((item) => {
+            const titulo = item.querySelector(".card-title").textContent.toLowerCase();
+
+            if (titulo.includes(texto)) {
+                item.style.display = "";
+                hayResultados = true;
+            } else {
+                item.style.display = "none";
+            }
+        });
+
+        // Muestra un mensaje si ningún programa coincide con la búsqueda
+        if (sinResultados) {
+            sinResultados.style.display = hayResultados ? "none" : "block";
+        }
+    });
+
+});

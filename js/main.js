@@ -1,11 +1,38 @@
 // ==========================================================================
 // LENGUAJES INFORMÁTICOS 1 (UNAHUR) - TRABAJO PRÁCTICO GRUPAL
 // Etapa 4 - JavaScript
-// Funcionalidad: Buscador de programas (sección "Programas")
+// Funcionalidades:
+//   1. Modo oscuro (todas las páginas)
+//   2. Buscador de programas (sección "Programas")
 // ==========================================================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    // ----------------------------------------------------------------
+    // 1. MODO OSCURO
+    // ----------------------------------------------------------------
+    const botonModo = document.getElementById("btn-modo");
+
+    if (botonModo) {
+        // Si el usuario ya había activado el modo oscuro antes, lo recordamos
+        if (localStorage.getItem("modo") === "oscuro") {
+            document.body.classList.add("oscuro");
+            botonModo.textContent = "☀️ Modo claro";
+        }
+
+        botonModo.addEventListener("click", () => {
+            document.body.classList.toggle("oscuro");
+
+            const activado = document.body.classList.contains("oscuro");
+            botonModo.textContent = activado ? "☀️ Modo claro" : "🌙 Modo oscuro";
+
+            localStorage.setItem("modo", activado ? "oscuro" : "claro");
+        });
+    }
+
+    // ----------------------------------------------------------------
+    // 2. BUSCADOR DE PROGRAMAS
+    // ----------------------------------------------------------------
     const buscador = document.getElementById("buscador-programas");
 
     // Si la página actual no tiene el buscador (no es programas.html), no hace nada
@@ -36,3 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+

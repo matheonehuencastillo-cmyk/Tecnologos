@@ -207,8 +207,12 @@ main {
 .logo{
     width: 1400px;
     height: 450px;
-    margin: 5px;
-    padding: 50px;
+}
+.imagenmision{
+    display: block;
+    margin-left: 150px;
+    
+
 }
 
 /* =========================

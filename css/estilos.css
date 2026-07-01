@@ -373,6 +373,160 @@ aside p {
     NOSOTROS - SECCIÓN INTRO
 ========================= */
 
+.nosotros-page {
+    padding: 0.5rem 0 0;
+}
+
+.nosotros-hero {
+    display: grid;
+    grid-template-columns: 1.7fr 0.9fr;
+    gap: 24px;
+    align-items: stretch;
+    background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+    border: 1px solid rgba(19, 64, 116, 0.12);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
+    margin-bottom: 1.75rem;
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--azul);
+    margin-bottom: 0.75rem;
+}
+
+.nosotros-hero__content h2 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    line-height: 1.15;
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+}
+
+.nosotros-hero__content p {
+    color: #334155;
+    margin-bottom: 0.95rem;
+}
+
+.nosotros-hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 1.25rem;
+}
+
+.nosotros-hero__stats div {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(19, 64, 116, 0.1);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.nosotros-hero__stats strong {
+    display: block;
+    font-size: 1.05rem;
+    color: var(--azul-oscuro);
+}
+
+.nosotros-hero__stats span {
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.nosotros-hero__panel {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(19, 64, 116, 0.14);
+    border-radius: 20px;
+    padding: 1.25rem;
+    align-self: center;
+}
+
+.nosotros-hero__panel h3 {
+    font-size: 1.1rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 0.85rem;
+}
+
+.nosotros-hero__panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.7rem;
+}
+
+.nosotros-hero__panel li {
+    position: relative;
+    padding-left: 1rem;
+    color: #334155;
+}
+
+.nosotros-hero__panel li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--azul);
+}
+
+.nosotros-accordion {
+    display: grid;
+    gap: 16px;
+    margin-top: 1rem;
+}
+
+.nosotros-page .nosotros-details {
+    background-color: var(--blanco);
+    border: 1px solid rgba(19, 64, 116, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+}
+
+.nosotros-page .nosotros-details summary {
+    background: transparent;
+    color: var(--azul-oscuro);
+    padding: 1rem 1.2rem;
+    border-radius: 0;
+    justify-content: flex-start;
+}
+
+.nosotros-page .nosotros-details summary h3 {
+    font-size: 1.05rem;
+    color: var(--azul-oscuro);
+    margin: 0;
+}
+
+.nosotros-page .nosotros-details summary::before {
+    color: var(--azul);
+}
+
+.nosotros-page .nosotros-details[open] summary {
+    background: linear-gradient(90deg, rgba(19, 64, 116, 0.06), rgba(19, 64, 116, 0.01));
+}
+
+.nosotros-page .nosotros-details p {
+    padding: 0 1.2rem 1rem;
+    color: #334155;
+    margin-bottom: 0.15rem;
+}
+
+.nosotros-page .nosotros-details strong {
+    color: var(--azul);
+}
+
+@media (max-width: 850px) {
+    .nosotros-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-hero__stats {
+        grid-template-columns: 1fr;
+    }
+}
+
 .nosotros-intro {
     background-color: var(--blanco);
     border-left: 6px solid var(--azul);
@@ -672,20 +826,38 @@ INTEGRANTE 4: Posicionamiento y personalización Bootstrap (Etapa 3)
 SECCIÓN: MODO OSCURO
    ========================================================================== */
 body.oscuro {
-    background-color: #1a1a1a;
-    color: #f5f5f5;
+    background-color: #0f172a;
+    color: #f8fafc;
 }
 
 body.oscuro main {
-    color: #f5f5f5;
+    color: #f8fafc;
+}
+
+body.oscuro header .navbar {
+    background-color: #111827 !important;
+}
+
+body.oscuro .navbar-brand,
+body.oscuro .nav-link {
+    color: #f8fafc !important;
+}
+
+body.oscuro footer {
+    background-color: #111827;
+    color: #f8fafc;
+}
+
+body.oscuro footer a {
+    color: #8DA9C4;
 }
 
 body.oscuro .card-programa,
 body.oscuro .card,
 body.oscuro details,
 body.oscuro #DatosExtras {
-    background-color: #2a2a2a;
-    color: #f5f5f5;
+    background-color: #1f2937;
+    color: #f8fafc;
     border-color: var(--celeste);
 }
 
@@ -697,7 +869,7 @@ body.oscuro aside h2,
 body.oscuro .programas > p,
 body.oscuro td,
 body.oscuro #sin-resultados {
-    color: #f5f5f5;
+    color: #f8fafc;
 }
 
 body.oscuro .programas h2 {
@@ -717,14 +889,48 @@ body.oscuro input[type="text"],
 body.oscuro input[type="email"],
 body.oscuro textarea,
 body.oscuro select {
-    background-color: #2a2a2a;
-    color: #f5f5f5;
+    background-color: #1f2937;
+    color: #f8fafc;
     border-color: #444;
 }
 
 body.oscuro #btn-modo {
-    color: #f5f5f5;
-    border-color: #f5f5f5;
+    color: #f8fafc;
+    border-color: #f8fafc;
+}
+
+body.oscuro .nosotros-hero {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    border-color: #475569;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+body.oscuro .nosotros-hero__content h2,
+body.oscuro .nosotros-hero__panel h3,
+body.oscuro .nosotros-page .nosotros-details summary h3 {
+    color: #f8fafc;
+}
+
+body.oscuro .nosotros-hero__content p,
+body.oscuro .nosotros-hero__panel li,
+body.oscuro .nosotros-page .nosotros-details p {
+    color: #e2e8f0;
+}
+
+body.oscuro .nosotros-hero__stats div,
+body.oscuro .nosotros-hero__panel,
+body.oscuro .nosotros-page .nosotros-details {
+    background-color: #1f2937;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+body.oscuro .nosotros-hero__stats strong {
+    color: #f8fafc;
+}
+
+body.oscuro .nosotros-hero__stats span {
+    color: #cbd5e1;
 }
 /* ==========================================================================
  

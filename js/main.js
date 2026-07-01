@@ -4,30 +4,30 @@
 // Funcionalidad: Buscador de programas (sección "Programas")
 // ==========================================================================
 
+// ----------------------------------------------------------------
+// 1. MODO OSCURO
+// ----------------------------------------------------------------
+const botonModo = document.getElementById("btn-modo");
 
-
-
-    // ----------------------------------------------------------------
-    // 1. MODO OSCURO
-    // ----------------------------------------------------------------
-    const botonModo = document.getElementById("btn-modo");
+function aplicarModoOscuro() {
+    const activado = localStorage.getItem("modo") === "oscuro";
+    document.body.classList.toggle("oscuro", activado);
 
     if (botonModo) {
-        // Si el usuario ya había activado el modo oscuro antes, lo recordamos
-        if (localStorage.getItem("modo") === "oscuro") {
-            document.body.classList.add("oscuro");
-            botonModo.textContent = "☀️ Modo claro";
-        }
-
-        botonModo.addEventListener("click", () => {
-            document.body.classList.toggle("oscuro");
-
-            const activado = document.body.classList.contains("oscuro");
-            botonModo.textContent = activado ? "☀️ Modo claro" : "🌙 Modo oscuro";
-
-            localStorage.setItem("modo", activado ? "oscuro" : "claro");
-        });
+        botonModo.textContent = activado ? "☀️ Modo claro" : "🌙 Modo oscuro";
     }
+}
+
+if (botonModo) {
+    aplicarModoOscuro();
+
+    botonModo.addEventListener("click", () => {
+        const activado = document.body.classList.toggle("oscuro");
+        botonModo.textContent = activado ? "☀️ Modo claro" : "🌙 Modo oscuro";
+        localStorage.setItem("modo", activado ? "oscuro" : "claro");
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const buscador = document.getElementById("buscador-programas");

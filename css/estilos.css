@@ -941,3 +941,57 @@ section {
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
+/* ==========================================================================
+FORMULARIO DE DONACIÓN
+   ========================================================================== */
+#form-donacion {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#form-donacion p {
+    margin-bottom: 1.2rem;
+}
+
+#form-donacion label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+#form-donacion input,
+#form-donacion select,
+#form-donacion textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#form-donacion input:focus,
+#form-donacion select:focus,
+#form-donacion textarea:focus {
+    outline: none;
+    border-color: var(--azul, #2563eb);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+#form-donacion .error {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+#form-donacion input.input-error,
+#form-donacion select.input-error {
+    border-color: #ff6b6b;
+}
+
+#form-donacion button[type="submit"] {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+}

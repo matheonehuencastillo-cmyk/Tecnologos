@@ -60,3 +60,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+// ----------------------------------------------------------------
+// 2. VALIDACIÓN DEL FORMULARIO DE DONACIÓN
+// ----------------------------------------------------------------
+const formDonacion = document.getElementById("form-donacion");
+
+if (formDonacion) {
+    formDonacion.addEventListener("submit", (e) => {
+        e.preventDefault(); // evita que la página se recargue
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const programa = document.getElementById("programa").value;
+        const donacion = document.getElementById("donacion").value;
+
+        if (nombre === "") {
+            alert("Por favor ingresá tu nombre.");
+            return;
+        }
+
+        if (email === "" || !email.includes("@")) {
+            alert("Por favor ingresá un email válido.");
+            return;
+        }
+
+        if (programa === "") {
+            alert("Por favor elegí un programa.");
+            return;
+        }
+
+        if (donacion === "") {
+            alert("Por favor elegí qué vas a donar.");
+            return;
+        }
+
+        alert("¡Gracias por tu donación, " + nombre + "!");
+        formDonacion.reset(); // limpia el formulario
+    });
+}

@@ -276,10 +276,10 @@ navbar-brand.
 responsivos.
 <br>
 
-3-integrante 3 : <strong>a confirmar</strong> se encarga del Flexbox en el CSS propio: cards o ítems de sección con display:flex
+3-integrante 3 : <strong>Francisco Schwab</strong> se encarga del Flexbox en el CSS propio: cards o ítems de sección con display:flex
 <br>
 
-2-integrante 4 : <strong>a confirmar</strong> se encarga de Posicionamiento y personalización Bootstrap: position en algún
+2-integrante 4 : <strong>Tobias Almiron</strong> se encarga de Posicionamiento y personalización Bootstrap: position en algún
 elemento + estilos propios sobre Bootstrap.
 
 <nav>
